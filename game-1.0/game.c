@@ -38,10 +38,12 @@ void draw_pixel(uint16_t x, uint16_t y, Color color){
 	if(x < scr_width && x >= 0 && y < scr_height && y >=0){
 		framebuffer [ x+ y*scr_width ] = color.toint;
 	}else {
-		printf("invalid pixel position: (%d,%d), max %d x %d", x,y,(scr_width -1), (scr_height -1));
+		printf("invalid pixel pos: (%d,%d), max %d x %d", x,y,(scr_width -1), (scr_height -1));
 		}
 
 }
+
+
 
 enum direction{
 	NONE 	=  0,
