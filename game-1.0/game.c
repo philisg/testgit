@@ -43,7 +43,10 @@ void draw_pixel(uint16_t x, uint16_t y, Color color){
 
 }
 
-
+int calc_devide(int a, int b)
+{
+	return a/b;
+}
 
 enum direction{
 	NONE 	=  0,
